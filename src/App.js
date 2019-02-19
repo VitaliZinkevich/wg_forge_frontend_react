@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
-//import './App.css';
-
+import './App.css';
 // table component that displays all data
+
 import Table from './components/Table'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Table/>
+      <div className="App ">
+      <div >
+      <Table/>
+      </div>
       </div>
     );
   }
