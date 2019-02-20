@@ -13,7 +13,28 @@ code {
     monospace;
 }
 
- table {
+ /* table {
   margin: 25px 25px 25px 25px;
+}  */
+table {
+  table-layout: fixed;
+  /* width: 180px;  */
+}
+
+
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.link-button:hover,
+.link-button:focus {
+text-decoration: none;
 } 
 

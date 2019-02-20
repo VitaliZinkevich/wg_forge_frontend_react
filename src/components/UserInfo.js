@@ -11,10 +11,6 @@ export default class UserInfo extends PureComponent {
     state={
         hidden: true,
     }
-
-
-   
-  
   
     render() { 
 
@@ -48,35 +44,20 @@ if (exactUser.company_id === null) {
     companyData = companies.find(e=>e.id === exactUser.company_id)
 }
 
-{/* <button 
-  type="button"
-  className="link-button" 
-  onClick={() => this.setState({showSomething: true})}>
-    Press me, I look like a link
-</button>
-
-Then use styling to change its appearance to that of a link:
-
-.link-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  text-decoration: underline;
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-.link-button:hover,
-.link-button:focus {
-text-decoration: none;
-} */}
+// The href attribute requires a valid value to be accessible. 
+// Provide a valid, navigable address as the href value. 
+// If you cannot provide a valid href, but still need the element to 
+// resemble a link, use a button and change it with appropriate styles. 
+// Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+// and reloading page when clicked at a tag with href  #
 
 return (<> 
-        <a href="#" 
+        <button 
+        type="button" 
+        className='link-button' 
         onClick={()=>{this.setState ({hidden:!this.state.hidden})}}>
                 {userForDisplayString}
-        </a>
+        </button>
 
         <div className={this.state.hidden === true? 'user-details d-none': 'user-details'}  >
                 <p>Birthday: {bDayString}</p>
