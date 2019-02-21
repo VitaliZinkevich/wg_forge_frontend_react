@@ -64,7 +64,7 @@ if (this.state.sortedTh === null) {
 }
 
 render() {
-// prepare for immutable work with data
+// make copy
 let ordersCopy = orders.map ((element)=>  {return {...element}})
 let usersCopy = users.map ((element)=>  {return {...element}})
 
@@ -259,6 +259,7 @@ if (orderDisplay.length === 1 ) {
 }
 
 
+console.log('RENDER TABLE')
 return (
 <div className='ml-5 mr-5 mt-5'>
   <table className='table table-striped'>
@@ -275,7 +276,7 @@ return (
     </select>
     </th>
 
-    <th colSpan='2'>Search: (case insensitive)</th>
+    <th colSpan='2'>Search (case insensitive):</th>
     <th colSpan='2'><input
     onChange={(e)=>{this.handleSearchInput(e)}}
     type="text" 
