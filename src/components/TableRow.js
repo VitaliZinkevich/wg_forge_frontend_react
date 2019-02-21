@@ -6,7 +6,7 @@ import UserInfo from './UserInfo'
 
 export default class TableRow extends PureComponent {
   render() {
-    console.log('RENDER ROW' + this.props.id)
+    //console.log('RENDER ROW' + this.props.id)
     return (
       <tr  id={`order_${this.props.id}`}>
         <td style={{wordWrap: 'break-word'}}>{this.props.transactionId}</td>

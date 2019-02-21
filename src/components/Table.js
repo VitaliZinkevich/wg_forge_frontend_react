@@ -259,7 +259,7 @@ if (orderDisplay.length === 1 ) {
 }
 
 
-console.log('RENDER TABLE')
+//console.log('RENDER TABLE')
 return (
 <div className='ml-5 mr-5 mt-5'>
   <table className='table table-striped'>

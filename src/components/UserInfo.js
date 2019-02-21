@@ -50,7 +50,7 @@ if (exactUser.company_id === null) {
 // resemble a link, use a button and change it with appropriate styles. 
 // Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
 // and reloading page when clicked at a tag with href  #
-console.log('RENDER USER DETAILES DATA' )
+//console.log('RENDER USER DETAILES DATA' )
 return (<> 
         <button 
         type="button" 

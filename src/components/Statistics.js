@@ -44,7 +44,7 @@ export let Statistics = (props)=> {
     let avrMaleCheck= maleOrders.length === 0 ? 'n/a': ( maleOrders.reduce((accumulator, currentValue) => {
         return accumulator + parseFloat (currentValue.total)}, 0).toFixed(2) / maleOrders.length).toFixed(2) 
     
-        console.log('RENDER STATS' )
+       // console.log('RENDER STATS' )
 
     return      <><tr>
                         <td colSpan='4'>Orders Count</td>
